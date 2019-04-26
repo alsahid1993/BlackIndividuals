@@ -1,8 +1,9 @@
 import  React  from "react";
- const ProfileOfAlsahid = ({ children, image  }) => (
+ const Profile1 = ({ children, image  }) => (
 
   <div className="col-sm order-1">
-        <img src={image} className="{alsahid}" alt="alsahid" class="img-thumbnail"></img>   
+        <img src={image} className="{alsahid}" alt="alsahid" class="img-thumbnail"></img> 
+          
         <div className="col-sm order-2">
                <p>
                 {children}
@@ -13,5 +14,4 @@ import  React  from "react";
                 </div> 
       </div>
  )
-
- export default ProfileOfAlsahid;
+ export default Profile1;

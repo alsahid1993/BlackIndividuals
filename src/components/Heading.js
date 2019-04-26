@@ -1,5 +1,6 @@
     import React, { Component } from "react";
     import FreBseAuth from "../Authentication/FreBseAuthentication"
+    import {Navbar} from "../Navbar/navbar";
     export class Header extends Component {
 
         render() {

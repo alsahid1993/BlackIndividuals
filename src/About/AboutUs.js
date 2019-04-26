@@ -1,40 +1,46 @@
 import React, { Component } from "react";
 import "../App/App.css";
-import AlsahidImage from "../img/alsahid.jpg";
-
-import { LewisWBio } from "./lewisBio";
-import { JohnFBio } from "./johnBio";
-import { Footer } from "../components/Footer";
+import AlsahidImage from "../img/Alsahid.jpg";
+import  lewisImage  from "../img/Lewis.jpg";
+import  JohnImage  from "../img/John.jpg";
+//import { Footer } from "../components/Footing"
+import Wrapper from "../components/Wrapper/index";
 import { NavBar } from "../Navbar/navbar";
 import ULottie from "../components/world";
 import { FreBseAuth } from "../Authentication/FreBseAuthentication";
-import ProfileOfAlsahid from "./Profile";
+import Profile1 from "./Profile";
 class AboutUsPpl extends Component {
   render() {
     return (
       <div className="App">
+        <div>
+        <Wrapper>
         <FreBseAuth />
         <NavBar />
         <ULottie />
-        <hr />
-        <h2>Who We Are</h2>
-        <hr />
         <div class="container">
           <div class="row">
-            <JohnFBio />
-          <ProfileOfAlsahid image={AlsahidImage}> Pretium quis volutpat ultrices nam senectus nisl inceptos risus
+          <Profile1 image={JohnImage}> Pretium quis volutpat ultrices nam senectus nisl inceptos risus
                   tristique quisque, posuere tempor etiam lacinia conubia cursus
                   tellus magna eget maecenas, interdum sodales tincidunt velit
                   purus aptent aliquet fusce pulvinar semper egestas volutpat
-                  facilisis ante.</ProfileOfAlsahid>
-            <LewisWBio />
+                  facilisis ante.</Profile1>
+          <Profile1 image={AlsahidImage}> Pretium quis volutpat ultrices nam senectus nisl inceptos risus
+                  tristique quisque, posuere tempor etiam lacinia conubia cursus
+                  tellus magna eget maecenas, interdum sodales tincidunt velit
+                  purus aptent aliquet fusce pulvinar semper egestas volutpat
+                  facilisis ante.</Profile1>
+          <Profile1 image={lewisImage}> Pretium quis volutpat ultrices nam senectus nisl inceptos risus
+                  tristique quisque, posuere tempor etiam lacinia conubia cursus
+                  tellus magna eget maecenas, interdum sodales tincidunt velit
+                  purus aptent aliquet fusce pulvinar semper egestas volutpat
+                  facilisis ante.</Profile1>
           </div>
         </div>
         <hr />
-
-        <hr />
-        <Footer />
         <div />
+        </Wrapper>
+        </div>
       </div>
     );
   }
