@@ -1,18 +1,19 @@
 import React, { Component } from "react";
-import { Footer } from "../components/Footing";
-import { NavBar } from "../Navbar/navbar";
-import ULottie from "../components/world";
+import Wrapper from "../components/Wrapper/index";
 import Mapspage from './mapspage';
+import { NavBar } from "../Navbar/navbar";
 
 class BlkMaps extends Component {
   render() {
     return (
-        <>
-        <NavBar />
-        <ULottie />
+      <div className="App">
+    
+        <Wrapper>  
+          <NavBar/>
         <Mapspage />
-        <Footer />
-        </>
+        </Wrapper> 
+    
+        </div>
     );
   }
 }

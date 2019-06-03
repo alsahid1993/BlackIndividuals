@@ -1,24 +1,19 @@
           import React, { Component } from "react";
           import "./App.css";
           import "./Normalise.css";
-          import { Footer } from "../components/Footing";
           import { NavBar } from "../Navbar/navbar";
           import { Testimony } from "../testimonials/testimonial";
           import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
-          import Header from "../components/Heading"
-    
+          import Wrapper from "../components/Wrapper/index";
 
           class App extends Component {
               render() {
               return (
                 <div >
-                  <Header/>
-                
+                  <Wrapper>
                   <NavBar />
-              
-                  <hr />
                   <Testimony />
-                  <Footer />
+                 </Wrapper>
                   <div />
                 </div>
               );

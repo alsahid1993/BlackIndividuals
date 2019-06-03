@@ -3,7 +3,7 @@ import "../App/App.css";
 import AlsahidImage from "../img/Alsahid.jpg";
 import  lewisImage  from "../img/Lewis.jpg";
 import  JohnImage  from "../img/John.jpg";
-//import { Footer } from "../components/Footing"
+
 import Wrapper from "../components/Wrapper/index";
 import { NavBar } from "../Navbar/navbar";
 import ULottie from "../components/world";
