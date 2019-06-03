@@ -13,7 +13,7 @@ class AboutUsPpl extends Component {
   render() {
     return (
       <div className="App">
-        <div>
+        <div> 
         <Wrapper>
         <FreBseAuth />
         <NavBar />
