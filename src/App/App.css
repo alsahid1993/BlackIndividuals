@@ -22,6 +22,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
 }
 
 .hero h1 {
@@ -64,17 +65,10 @@
   display: flex;
   width: 100px;
   align-items: center;
-  outline: dashed;
+ position: relative;
 }
 
-.boxAuth{
- position: absolute;
-  outline: dashed;
-  top: 80px;
-  right: 0;
 
-
-}
 .App-link {
   color: #61dafb;
 }

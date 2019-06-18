@@ -1,6 +1,6 @@
-import React  from 'react'
+import React from "react";
 import { withRouter } from "react-router";
-import styles from 'styled-components';
+import styles from "styled-components";
 
 const Button = styles.button`
  display:inline-block;
@@ -22,12 +22,20 @@ const Button = styles.button`
 }
 `;
 
-  const Navbar = (props) => (
-            <div className="navbar">
-            <Button  onClick={() => props.history.push('/')}><i className="fas fa-home"></i></Button>
-            <Button onClick={() => props.history.push('/About')}><i className="fas fa-address-card"></i></Button>
-            <Button onClick={() => props.history.push('/maps')}><i className="fas fa-map-marked-alt"></i> </Button>
-            <Button onClick={() => props.history.push('/TeamArticles')}><i className="fas fa-people-carry"></i> </Button>
-          </div>  
-        );
+const Navbar = props => (
+  <div className="navbar">
+    <Button onClick={() => props.history.push("/")}>
+      <i className="fas fa-home" />
+    </Button>
+    <Button onClick={() => props.history.push("/About")}>
+      <i className="fas fa-address-card" />
+    </Button>
+    <Button onClick={() => props.history.push("/map")}>
+      <i className="fas fa-map-marked-alt" />{" "}
+    </Button>
+    <Button onClick={() => props.history.push("/TeamArticles")}>
+      <i className="fas fa-people-carry" />{" "}
+    </Button>
+  </div>
+);
 export const NavBar = withRouter(Navbar);

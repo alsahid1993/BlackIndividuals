@@ -1,6 +1,6 @@
 import React from "react";
 import { Footer } from "../Footing";
-import  Header  from "../Heading";
+import { Header } from "../Heading";
 
 
  const Wrapper = ({ children  }) => (

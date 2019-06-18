@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "../App/App.css";
-import AlsahidImage from "../img/Alsahid.jpg";
-import  lewisImage  from "../img/Lewis.jpg";
-import  JohnImage  from "../img/John.jpg";
+import AlsahidImage from "../img/alsahid.jpg";
+import  lewisImage  from "../img/lewis.jpg";
+import  JohnImage  from "../img/john.jpg";
 
 import Wrapper from "../components/Wrapper/index";
 import { NavBar } from "../Navbar/navbar";
