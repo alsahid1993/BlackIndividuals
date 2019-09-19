@@ -3,39 +3,39 @@
 }
 
 .hero {
-    /* Sizing */
-    width: 100vw;
-    height: 100vh;
-    
-    /* Flexbox stuff */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    /* Text styles */
-    text-align: center;
-    color: white;
-    
-    /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/people.jpeg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Text styles */
+  text-align: center;
+  color: white;
+
+  /* Background styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/people.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .hero h1 {
-    /* Text styles */
-    font-size: 5em;
-    
-    /* Margins */
-    margin-top: 0;
-    margin-bottom: 0.5em;
+  /* Text styles */
+  font-size: 5em;
+
+  /* Margins */
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
 
-.profile padding{
-  size: 100px
+.profile padding {
+  size: 100px;
 }
 
 @keyframes App-logo-spin {
@@ -47,14 +47,14 @@
   }
 }
 
-.ProfilePic{
+.ProfilePic {
   position: absolute;
   top: 40px;
   right: 0;
   width: 50px;
   height: 50px;
 }
-.SignOutBtn{
+.SignOutBtn {
   position: absolute;
   top: 0;
   right: 0;
@@ -65,14 +65,48 @@
   display: flex;
   width: 100px;
   align-items: center;
- position: relative;
+  position: relative;
 }
-
 
 .App-link {
   color: #61dafb;
 }
 
-authenticate{
+.authenticate {
   outline: dashed;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.social a {
+  font-size: 2.5em;
+  padding: 1rem;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-google-plus-g,
+.fa-instagram,
+.fa-youtube {
+  padding: 1rem;
+}
+
+.webkit-file-upload-button .button {
+  border: none;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-google-plus-g:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+  color: #f7f551;
 }

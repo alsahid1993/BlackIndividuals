@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "./Footer.css";
+import "../App/App.css";
 export class Footer extends Component {
   render() {
     return (
-      <h4 className="container-fluid padding">
-        <div className="row text-center padding">
-          <div className="col-12 social padding">
+      <h4 className="container-fluid">
+        <div className="row text-center">
+          <div className="col-12 social ">
             <button>
               <i className="fab fa-facebook fa-3x " />
             </button>
