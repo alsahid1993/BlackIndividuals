@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router";
 import styles from "styled-components";
-
+import "../App/App.css";
 const Button = styles.button`
  display:inline-block;
  padding:0.35em 1.2em;
@@ -24,18 +24,32 @@ const Button = styles.button`
 
 const Navbar = props => (
   <div className="navbar">
-    <Button onClick={() => props.history.push("/")}>
+    <Button onClick={() => props.history.push("/home")}>
       <i className="fas fa-home" />
     </Button>
-    <Button onClick={() => props.history.push("/About")}>
+    <Button onClick={() => props.history.push("/AboutUs")}>
       <i className="fas fa-address-card" />
     </Button>
     <Button onClick={() => props.history.push("/map")}>
       <i className="fas fa-map-marked-alt" />{" "}
     </Button>
-    <Button onClick={() => props.history.push("/TeamArticles")}>
+    <Button onClick={() => props.history.push("/trips")}>
       <i className="fas fa-people-carry" />{" "}
     </Button>
+
+    <ul>
+      <li>
+        <a class="active" href="/home">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="/AboutUs">About us</a>
+      </li>
+      <li>
+        <a href="/trips">Our Trips</a>
+      </li>
+    </ul>
   </div>
 );
 export const NavBar = withRouter(Navbar);

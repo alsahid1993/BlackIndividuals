@@ -38,15 +38,6 @@
   size: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .ProfilePic {
   position: absolute;
   top: 40px;
@@ -72,10 +63,6 @@
   color: #61dafb;
 }
 
-.authenticate {
-  outline: dashed;
-}
-
 body {
   min-height: 100vh;
   display: flex;
@@ -84,19 +71,14 @@ body {
 
 footer {
   margin-top: auto;
+  min-height: calc(100vh - 60px);
 }
 
-.social a {
+.social-icons {
+  display: flex;
+  list-style: none;
   font-size: 2.5em;
-  padding: 1rem;
-}
-
-.fa-facebook,
-.fa-twitter,
-.fa-google-plus-g,
-.fa-instagram,
-.fa-youtube {
-  padding: 1rem;
+  justify-content: space-around;
 }
 
 .webkit-file-upload-button .button {
@@ -109,4 +91,20 @@ footer {
 .fa-instagram:hover,
 .fa-youtube:hover {
   color: #f7f551;
+}
+
+/*
+about us team-flow-container
+*/
+.team-flow-container {
+  margin: auto;
+  padding: 0;
+  display: grid;
+ 
+}
+.johnProfile {
+  flex: 1;
+}
+.alsahidProfile {
+  flex: 1.28;
 }

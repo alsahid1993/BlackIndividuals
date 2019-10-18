@@ -6,21 +6,28 @@ export class Footer extends Component {
       <h4 className="container-fluid">
         <div className="row text-center">
           <div className="col-12 social ">
-            <button>
-              <i className="fab fa-facebook fa-3x " />
-            </button>
-            <button>
-              <i className="fab fa-twitter fa-3x" />
-            </button>
-            <button>
-              <i className="fab fa-instagram fa-3x" />
-            </button>
-            <button>
-              <i className="fab fa-google-plus-g fa-3x" />
-            </button>
-            <button>
-              <i className="fab fa-youtube fa-3x" />
-            </button>
+            <ul class="social-icons">
+              <li>
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </h4>
